@@ -1,0 +1,197 @@
+.sidebar {
+  width: 320px;
+  padding: 24px;
+  background-color: #0f172a;
+  color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.sidebar section h3 {
+  margin: 0 0 12px 0;
+  font-size: 1rem;
+  color: #cbd5f5;
+}
+
+.sidebar-form {
+  display: grid;
+  gap: 12px;
+}
+
+.sidebar-form label {
+  display: grid;
+  gap: 6px;
+  font-size: 0.9rem;
+}
+
+.sidebar-form input,
+.sidebar-form select {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  background-color: rgba(15, 23, 42, 0.7);
+  color: inherit;
+}
+
+.sidebar-form input::placeholder {
+  color: rgba(148, 163, 184, 0.7);
+}
+
+.sidebar-form button {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: rgba(148, 163, 184, 0.2);
+  color: inherit;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar-form button:hover:not(:disabled) {
+  background-color: rgba(148, 163, 184, 0.35);
+}
+
+.sidebar-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.sidebar-form .primary {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
+.color-picker {
+  display: grid;
+  gap: 8px;
+}
+
+.color-options {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.color-options button {
+  width: 28px;
+  height: 28px;
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  padding: 0;
+}
+
+.color-options button.active {
+  border-color: #f8fafc;
+}
+
+.role-editor {
+  display: grid;
+  gap: 12px;
+}
+
+.role-editor-title {
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgba(203, 213, 225, 0.9);
+}
+
+.role-select-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.role-select-button {
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background-color: rgba(15, 23, 42, 0.6);
+  color: inherit;
+  border-radius: 9999px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.role-select-button:hover {
+  border-color: rgba(148, 163, 184, 0.7);
+}
+
+.role-select-button.active {
+  background-color: #38bdf8;
+  color: #0f172a;
+  border-color: transparent;
+}
+
+.role-edit-form {
+  margin-top: 8px;
+}
+
+.size-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background-color: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  font-size: 0.85rem;
+}
+
+.size-controls span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.size-controls-buttons {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.size-controls-buttons button {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background-color: rgba(148, 163, 184, 0.2);
+  color: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.size-controls-buttons button:hover {
+  background-color: rgba(148, 163, 184, 0.35);
+}
+
+.size-controls-buttons button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.size-display {
+  min-width: 48px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.background-form {
+  display: flex;
+}
+
+.background-color-field input {
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  padding: 4px;
+  background: transparent;
+  cursor: pointer;
+}
